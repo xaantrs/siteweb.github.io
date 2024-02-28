@@ -1,0 +1,109 @@
+/* css reset */
+
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --font-title: 'Jaldi';
+}
+
+.containerbotao {
+        position: relative; 
+        display: inline-block; 
+        left: 16rem;
+        top: 46rem;
+}
+
+.texto{
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        text-align: center; 
+        color: #7F7689; 
+        font-size: 6.5rem; 
+        font-family: var(--font-title);
+    }
+
+.containerbotao2 {
+        position: relative; 
+        display: inline-block; 
+        left: 16rem;
+        top: 46rem;
+    }
+    
+.texto2{
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        text-align: center; 
+        color: #7F7689; 
+        font-size: 6.5rem; 
+        font-family: var(--font-title);
+        }
+
+#topo {
+    width: 100vw; 
+    height: auto; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+}
+
+#animal {
+    width: 20vw; 
+    height: auto; 
+    position: absolute; 
+    top: 8rem; 
+    left: 1rem; 
+}
+
+#retan1 {
+    
+    width: 61rem; 
+    height: auto;  
+    position: absolute; 
+    top: 10rem; 
+    left: 26rem;
+}
+
+#retan2 {
+    
+    width: 61rem; 
+    height: auto;  
+    position: absolute; 
+    top: 25rem; 
+    left: 26rem;
+}
+
+#retan3 {
+    
+    width: 23rem; 
+    height: 19rem;  
+    position: absolute; 
+    top: 25rem;
+    left: 1rem;
+}
+
+#retan4 {
+    
+    width: auto;
+    height: auto;  
+    position: absolute; 
+    top: 12.5rem;
+    right: 2rem;
+}
+
+#retan5 {
+    
+    width: 100vw;
+    height: 15rem;  
+    position: absolute; 
+    left: 0rem;
+    bottom: 0rem;
+}
