@@ -1,109 +1,200 @@
-/* css reset */
-
-html{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+header{
+    padding: 70px 0;
+}
+
+.menu{
+    text-align: center;
+}
+
+.menu a{
+    color: black;
     text-decoration: none;
+    text-align: center;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 50px;
+    position: relative;
 }
 
-:root {
-    --font-title: 'Jaldi';
+.menu a::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
 }
 
-.containerbotao {
-        position: relative; 
-        display: inline-block; 
-        left: 16rem;
-        top: 46rem;
+.menu a:hover::after{
+    width: 100%;
+
 }
 
-.texto{
-        position: absolute; 
-        top: 50%; 
-        left: 50%; 
-        transform: translate(-50%, -50%); 
-        text-align: center; 
-        color: #7F7689; 
-        font-size: 6.5rem; 
-        font-family: var(--font-title);
+.imagem {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.jogoLateralEsquerda {
+    margin-left: 10%;
+    margin-top: 250px;
+}
+
+.jogoCentro {
+}
+
+.jogoLateralDireita {
+    margin-right: 10%;
+    margin-top: 250px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.painel1 {
+    position: absolute;
+    width: 1330px; 
+    height: 120px; 
+    margin-top: 40px;
+}
+
+.painel2 {
+    position: absolute;
+    width: 1342px; 
+    height: 149px; 
+    margin-top: 40px;
+    z-index: -1;
+}
+
+.circulo {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.circuloPequeno {
+    display: inline-flex;
+    position: relative;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.infoTexto {
+    display: flex;
+    justify-content: center;  
+    padding: 0 2%;
+    margin-top: 80px;
+}
+
+.infoTexto a {
+    text-decoration: none;
+    text-align: center;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 30px;
+}
+
+.text1 {
+    color: #919BFC;
+}
+
+.text2 {
+    color: #857150;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
     }
-
-.containerbotao2 {
-        position: relative; 
-        display: inline-block; 
-        left: 16rem;
-        top: 46rem;
+    100% {
+        top: 30px;
     }
-    
-.texto2{
-        position: absolute; 
-        top: 50%; 
-        left: 50%; 
-        transform: translate(-50%, -50%); 
-        text-align: center; 
-        color: #7F7689; 
-        font-size: 6.5rem; 
-        font-family: var(--font-title);
-        }
-
-#topo {
-    width: 100vw; 
-    height: auto; 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
 }
 
-#animal {
-    width: 20vw; 
-    height: auto; 
-    position: absolute; 
-    top: 8rem; 
-    left: 1rem; 
+/* ESTILO NINTENDO */
+
+section.nintendo{
+    padding: 5% 0;
+    padding-bottom: 2%;
 }
 
-#retan1 {
-    
-    width: 61rem; 
-    height: auto;  
-    position: absolute; 
-    top: 10rem; 
-    left: 26rem;
+.interface{   
+    padding: 0 2%;
+    text-align: left;
 }
 
-#retan2 {
-    
-    width: 61rem; 
-    height: auto;  
-    position: absolute; 
-    top: 25rem; 
-    left: 26rem;
+.Texto4 a{
+    text-decoration: none;
+    text-align: center;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 5%;
 }
 
-#retan3 {
-    
-    width: 23rem; 
-    height: 19rem;  
-    position: absolute; 
-    top: 25rem;
-    left: 1rem;
+.Texto4 .text1 {
+    color: #919BFC;
 }
 
-#retan4 {
-    
-    width: auto;
-    height: auto;  
-    position: absolute; 
-    top: 12.5rem;
-    right: 2rem;
+.Texto4 .text2 {
+    color: #857150;
 }
 
-#retan5 {
-    
-    width: 100vw;
-    height: 15rem;  
-    position: absolute; 
-    left: 0rem;
-    bottom: 0rem;
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 2%;
+    margin-top: 2%;
+}
+.card1, .card2, .card3 {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    margin-right: 2%;
+}
+
+@media screen and (max-width: 1020px){
+    .center{
+        display: none;
+
+    }
 }
