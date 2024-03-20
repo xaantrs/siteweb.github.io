@@ -5,38 +5,39 @@
 }
 
 html,body{
-    height: 100%;
-}
-
-.center{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 2%;
+    height: 100vh;
+    width: 100%;
+    background: white;
 }
 
 header{
-    padding: 70px 0;
+    padding: 1% 0;
+}
+
+.cabeca{
+    display: flex;
+    justify-content: center;
+    max-width: 68rem;
+    margin: 0 auto;
+    padding: 3rem;
 }
 
 .menu{
     text-align: center;
 }
 
-.menu a{
+.menu a {
     color: black;
     text-decoration: none;
-    text-align: center;
     font-family: Inter;
-    font-size: 36px;
+    font-size: 2rem; 
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin-right: 50px;
+    margin-right: 3rem; 
     position: relative;
 }
+
 
 .menu a::after{
     content: " ";
@@ -51,10 +52,9 @@ header{
 
 .menu a:hover::after{
     width: 100%;
-
 }
 
-.imagem {
+.imagens {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -62,7 +62,7 @@ header{
     padding: 0 2%;
 }
 
-.jogoLateralEsquerda {
+.jogoEsquerda {
     margin-left: 10%;
     margin-top: 250px;
 }
@@ -70,12 +70,12 @@ header{
 .jogoCentro {
 }
 
-.jogoLateralDireita {
+.jogoDireita {
     margin-right: 10%;
     margin-top: 250px;
 }
 
-.info {
+.informacaoJogo {
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -95,20 +95,6 @@ header{
     height: 149px; 
     margin-top: 40px;
     z-index: -1;
-}
-
-.circulo {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 0 2%;
-}
-
-.circuloPequeno {
-    display: inline-flex;
-    position: relative;
-    margin-right: 20px;
-    margin-top: 10px;
 }
 
 .infoTexto {
@@ -146,19 +132,16 @@ header{
     }
 }
 
-/* ESTILO NINTENDO */
+/* SEÇÃO 2 - Nintendo */
 
-section.nintendo{
+section.Secao2{
+    background-color: #F6F6F6;
     padding: 5% 0;
-    padding-bottom: 2%;
+    height: 100vh;
 }
 
-.interface{   
-    padding: 0 2%;
-    text-align: left;
-}
-
-.Texto4 a{
+.infoSeçao2 a{
+    display: flex;
     text-decoration: none;
     text-align: center;
     font-family: Inter;
@@ -166,35 +149,240 @@ section.nintendo{
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin-left: 5%;
+    margin-left: 36px;
+    justify-content: center;
 }
 
-.Texto4 .text1 {
+.infoSeçao2 .text1 {
     color: #919BFC;
+    margin-left: 0;
 }
 
-.Texto4 .text2 {
+.infoSeçao2 .text2 {
     color: #857150;
+    margin-left: 0;
 }
 
-.flex {
+main.cards{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    padding: 0 2%;
-    margin-top: 2%;
+    padding: 32px;
 }
-.card1, .card2, .card3 {
-    width: 90%;
+
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #FFFAE4;
+    padding: 1rem 1.5rem;
+    border-radius: 15px;
+    margin-left: 5rem;
+    width: 400px;
+    height: 700px;
+}
+
+main.cards section.card:first-child{
+    margin-left: 0;
+}
+
+main.cards section.card .icon{
     height: auto;
-    margin-left: 5%;
-    margin-right: 2%;
+    width: 400px;
 }
 
-@media screen and (max-width: 1020px){
-    .center{
-        display: none;
+main.cards section.card img{
+    padding: 0;
+    width: 100%;
+    margin-top: -16px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
 
+main.cards section.card h3{
+    color: #919BFC;
+    text-align: center;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 60px;
+}
+
+main.cards section.card span{
+    color: black;
+    text-align: center;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 30px;
+}
+
+main.cards section.card button{
+    margin-top: 40px;
+    padding: 0.5rem 1rem;
+
+    /* Config Fonte */
+    color: #FFF;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    font-family: Inter;
+    font-style: normal;
+    text-transform: uppercase;
+
+    /* Config Botão */
+
+    border-radius: 12px;
+    border: 0;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: #FD8787;
+    width: 360px;
+    height: 135px;
+}
+
+@media screen and (max-width: 720px) {
+
+    main.cards{
+        flex-direction: column;
+        align-items: center;
     }
+
+    main.cards section.card {
+        margin-left: 0px;
+        margin-bottom: 32px;
+}
+
+    main.cards section.card:last-child {
+         margin-bottom: 0;
+}
+}
+
+/* SEÇÃO 3 - Fale Conosco */
+
+section.Secao3{
+    background-color: bisque;
+    padding: 3% 0;
+    height: 100vh;
+}
+
+/* Config - O manda chuva do formulario */
+
+.container{
+    display: flex;
+    padding: 5% 4% 4%;
+    max-width: 1280px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Config - Quadradin do formulario KEKW KWAI LMFAO" */
+
+form{
+    background-color: white;
+    max-width: 1000px;
+    height: 600px;
+    padding: 60px;
+    border-radius: 15px;
+}
+
+/* Config - Escrita "Entre em contato" */
+
+form h1{
+    text-align: center;
+    font-size: 40px;
+    color: #919BFC;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* Config - Escrita "Preencher..." */
+
+form p{
+    padding: 2%;
+    margin: 20px 20px 0 0;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+    /* Config padrão - Linha da caixa de escrita */
+
+.input-single{
+    position: relative;
+    margin: 30px 0;
+}
+
+    /* Config - Linha da caixa de escrita  */
+
+.input-single label {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    transition: all 0.3s;
+    font-family: Inter;
+    cursor: text;
+}
+
+    /* Config - Linha da caixa de escrita  */
+
+.input {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #ccc;
+    padding: 5px;
+    font-size: 17px;
+    outline: 0;
+}
+
+    /* Config que muda o tamanho e sobe conteudo do formulario quando o mouse passa por cima */
+
+form .input-single .input:focus ~ label, 
+form .input-single .input:valid ~ label {
+    transform: translateY(-25px);
+    font-size: 12px;
+    color: black;
+}
+
+    /* Config Padrão do botão */
+
+.botao{
+    padding: 25px;
+    width: 100%;
+    text-align: center;
+}
+
+form input[type=submit] { 
+    
+    /* Config Botão */
+
+    width: 230px;
+    height: 100px;
+    padding: 10px;
+    border: 0;
+    border-radius: 12px;
+    background-color: #FD8787;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: white;
+    cursor: pointer;
+
+    /* Config Letra do botão */
+
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    font-family: Inter;
+    font-style: normal;
 }

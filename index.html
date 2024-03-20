@@ -5,102 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AXL Store</title>
     <link href="style.css" rel="stylesheet"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="center">
+        <div class="cabeca">
             <div class="menu">
                 <a href="#">Home</a>
                 <a href="#">Nintendo</a>
                 <a href="#">Xbox</a>
                 <a href="#">Playstation</a>
+                <a href="#">Fale Conosco</a>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="topo-site">
-            <div class="imagem">
-    
-                <div class="jogoLateralEsquerda">
+
+        <!--SEÇÃO 1-->
+        <section class="Secao1">
+            <div class="imagens"> <!-- Classe das imagens -->
+                <div class="jogoEsquerda">
                     <img class="jogo1" src="assets/Jogo 1.png" alt="">
                 </div>
+                
                 <div class="jogoCentro">
-                    <img class="jogo2" img src="assets/Jogo 2.png" alt="">
-                    
-                <div class="circulo">
-                    <div class="cicle">
-                        <img class="circuloPequeno" src="assets/circulo1.png">
-                        <img class="circuloPequeno" src="assets/circulo2.png">
-                        <img class="circuloPequeno" src="assets/circulo3.png">
-                        </div>
-                    </div>
-    
+                    <img class="jogo2" src="assets/Jogo 2.png" alt="">
                 </div>
-    
-                <div class="jogoLateralDireita">
-                    <img class="jogo3" img src="assets/Jogo 3.png" alt="">
+
+                <div class="jogoDireita">
+                    <img class="jogo3" src="assets/Jogo 3.png" alt="">
                 </div>
+
             </div>
-    
-            <div class="info">
+            <div class="informacaoJogo"> <!-- Classe do painel (Bottom) -->
                 <img class="painel1" src="assets/Painel1.png" alt="">
                 <img class="painel2" src="assets/Painel2.png" alt="">
-                
+
                 <div class="infoTexto">
-    
+                    
                     <div class="Texto1">
                         <a class="text1"> Loja <br> 
                         <a class="text2"> 100% Oficial</a>
                     </div>
-        
-                    <div class="Texto2">
+                    
+                    <div class="Texto1">
                         <a class="text1"> Experiência <br> 
                         <a class="text2"> Segura e Simples</a>
+                    
                     </div>
-        
-                    <div class="Texto3">
+                    <div class="Texto1">
                         <a class="text1"> Divirta-se com <br> 
                         <a class="text2"> Os melhores jogos</a>
                     </div>
-        
+
                 </div>
+            </div>
+        </section> 
+    
+        <!--SEÇÃO 2-->
+        <section class="Secao2">
+
+            <div class="Texto">
+                <div class="infoSeçao2">
+                    <a class="text1"> Nintendo <br> 
+                    <a class="text2"> Jogos com 20% de desconto</a>
+                </div>
+            </div>
+
+            <main class="cards"> <!-- Classe para os cards de jogos -->
+                
+                <section class="card">
+                    <div class="icon">
+                        <img class="card1" src="assets/JogoCard1.png" alt="Mario"> 
+                    </div> 
+
+                    <h3>Super Mario Party</h3>
+                    <span>Jogo Legal</span>
+                    <button>R$100,00</button>
+                </section>
+                
+                <section class="card">
+                    <div class="icon">
+                        <img class="card2" src="assets/JogoCard2.png" alt="Zelda">  
+                    </div>
+
+                    <h3>The Legend of Zelda</h3>
+                    <span>Jogo Legal</span>
+                    <button>R$100,00</button>
+                </section>
+
+                <section class="card">
+                    <div class="icon">
+                        <img class="card3" src="assets/JogoCard3.png" alt="Animal Crossing">  
+                    </div>
+
+                    <h3>Animal Crossing</h3>
+                    <span>Jogo Legal</span>
+                    <button>R$100,00</button>
+                </section>
+
+            </main>
             
-            </div>
-    
-        </section> <!--topo-sote-->
-    
-        <section class="nintendo">
+        </section> 
 
-            <div class="interface">
+        <!--SEÇÃO 3-->
+        <section class="Secao3">
 
-            <div class="Texto4">
-                    <div class="Texto4">
-                        <a class="text1"> Nintendo <br> 
-                        <a class="text2"> Jogos com 20% de desconto</a>
-                    </div>
-            </div>
-                    
-                <div class="flex">
-                    <div class="mario-box">
-                        <img class="card1" img src="assets/Card 1.png" alt="">  
-                    </div>
-                    <div class="zelda-box">
-                        <img class="card2" img src="assets/Card 2.png" alt="">  
-                    </div>
-                    <div class="animal-crossing-box">
-                        <img class="card3" img src="assets/Card 3.png" alt="">  
-                    </div>
+            <section class="form-container">
+                <div class="container">
+                    <form action="">
+
+                        <h1>Entre em contato</h1>
+                        <p>Preencha o formulário abaixo e entraremos em contato com você</p>
+
+                        <div class="input-single">
+                            <input type="text" id="nome-box" class="input" autocomplete="off" required>
+                            <label for="nome-box">Nome:</label>
+                        </div>
+
+                        <div class="input-single">
+                            <input type="text" id="email-box" class="input" autocomplete="off" required>
+                            <label for="email-box">Email:</label>
+                        </div>
+
+                        <div class="input-single">
+                            <input type="text" id="telefone-box" class="input" autocomplete="off" required>
+                            <label for="telefone-box">Telefone:</label>
+                        </div>
+
+                        <div class="botao">
+                            <input type="submit" value="Enviar">
+                        </div>
+
+                    </form>
                 </div>
-            </div>
-
-        </section> <!--seção nintendo-->
+            </section>    
+        </section>
     </main>
-
-    
 </body>
 </html>
