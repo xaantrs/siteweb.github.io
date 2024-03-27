@@ -274,7 +274,7 @@ section.Secao3{
 
 .container{
     display: flex;
-    padding: 5% 4% 4%;
+    padding: 1% 4% 4%;
     max-width: 1280px;
     margin: 0 auto;
     justify-content: center;
@@ -286,9 +286,10 @@ section.Secao3{
 form{
     background-color: white;
     max-width: 1000px;
-    height: 600px;
+    height: 840px;
     padding: 60px;
     border-radius: 15px;
+    
 }
 
 /* Config - Escrita "Entre em contato" */
@@ -304,7 +305,7 @@ form h1{
     line-height: normal;
 }
 
-/* Config - Escrita "Preencher..." */
+/* Config - Escrita "Preencha..." */
 
 form p{
     padding: 2%;
@@ -316,6 +317,7 @@ form p{
     font-weight: 600;
     line-height: normal;
 }
+
 
     /* Config padrão - Linha da caixa de escrita */
 
@@ -335,6 +337,22 @@ form p{
     cursor: text;
 }
 
+.error {
+    position: absolute;
+    color: red;
+    font-size: 1rem;
+    left: 2px;
+    top: 2.2rem;
+} 
+
+.caixa-mensagem .error {
+    position: absolute;
+    color: red;
+    font-size: 1rem;
+    left: 5px;
+    top: 14.2rem;
+}
+
     /* Config - Linha da caixa de escrita  */
 
 .input {
@@ -346,6 +364,40 @@ form p{
     outline: 0;
 }
 
+.caixa-selecao, .caixa-mensagem{
+    position: relative;
+    margin: 20px 0;
+}
+
+.caixa-selecao label {
+    font-family: Inter;
+    cursor: text;
+}
+
+.caixa-selecao select {
+    font-size: 15px;
+    font-family: Inter;
+    cursor: text;
+    border-radius: 5px;
+}
+
+.caixa-mensagem label {
+    display: flex;
+    flex-direction: column;
+    font-family: Inter;
+    cursor: text;
+}
+
+.caixa-mensagem textarea {
+    width: 100%;
+    padding: 4px 0 0 4px;
+    font-size: 15px;
+    font-family: Inter;
+    margin-top: 5px;
+    border-radius: 7px;
+    resize: none;
+}   
+
     /* Config que muda o tamanho e sobe conteudo do formulario quando o mouse passa por cima */
 
 form .input-single .input:focus ~ label, 
@@ -355,10 +407,11 @@ form .input-single .input:valid ~ label {
     color: black;
 }
 
+
     /* Config Padrão do botão */
 
 .botao{
-    padding: 25px;
+    padding: 0.7rem;
     width: 100%;
     text-align: center;
 }
@@ -369,7 +422,6 @@ form input[type=submit] {
 
     width: 230px;
     height: 100px;
-    padding: 10px;
     border: 0;
     border-radius: 12px;
     background-color: #FD8787;

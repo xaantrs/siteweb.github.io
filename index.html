@@ -114,24 +114,43 @@
 
             <section class="form-container">
                 <div class="container">
-                    <form action="">
+                    <form id="formContato" action="" novalidate>
 
                         <h1>Entre em contato</h1>
                         <p>Preencha o formulário abaixo e entraremos em contato com você</p>
 
                         <div class="input-single">
-                            <input type="text" id="nome-box" class="input" autocomplete="off" required>
-                            <label for="nome-box">Nome:</label>
+                            <input type="text" id="nome-box" class="input" autocomplete="off" required maxlength="25">
+                            <label  id="labelNome" for="nome-box">Nome:</label>
+                            <div id="nomeError" class="error"></div>
                         </div>
 
                         <div class="input-single">
-                            <input type="text" id="email-box" class="input" autocomplete="off" required>
+                            <input type="text" id="email-box" class="input" autocomplete="off" required maxlength="50">
                             <label for="email-box">Email:</label>
+                            <div id="emailError" class="error"></div>
                         </div>
 
                         <div class="input-single">
-                            <input type="text" id="telefone-box" class="input" autocomplete="off" required>
+                            <input type="text" id="telefone-box" class="input" autocomplete="off" required maxlength="25">
                             <label for="telefone-box">Telefone:</label>
+                            <div id="telefoneError" class="error"></div>
+                        </div>
+
+                        <div class="caixa-selecao">
+                            <label for="problema">Tipo de problema:</label>
+                            <select name="problema" id="problema" required maxlength="100">
+                                <option value="Defeito">Defeito</option>
+                                <option value="Devolução">Devolução</option>
+                                <option value="Troca">Troca</option>
+                            </select>
+                            <div id="problemaError" class="error"></div>
+                        </div>
+
+                        <div class="caixa-mensagem">
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                            <div id="mensagemError" class="error"></div>
                         </div>
 
                         <div class="botao">
@@ -139,6 +158,7 @@
                         </div>
 
                     </form>
+                    <script src="script.js"></script>
                 </div>
             </section>    
         </section>
